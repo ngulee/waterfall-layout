@@ -1,0 +1,29 @@
+<scroll-view 
+  class="waterfall-page-wrapper"
+  scroll-y="{{true}}"
+  lower-threshold="{{200}}"
+  bindscrolltolower="handleScrollLower"
+>
+  <view class="example">
+   小程序瀑布流组件实例
+  </view>
+  <waterfall
+    custom-class="waterfall-box"
+    loading="{{updateLoading}}"
+    isAllLoaded="{{isAllLoaded}}"
+    bind:scrolltolower="handleScrollLower"
+  >
+    <waterfall-item 
+      custom-class="product-item-box"
+      wx:for="{{products}}" 
+      wx:key="index" width="{{350}}"
+    >
+      <view 
+        class="product-item" 
+        style="height:{{item.height}}rpx;background:{{item.background}};" 
+        bind:tap="onTap"
+      >product-{{index + 1}}</view>
+    </waterfall-item>
+  </waterfall>
+
+</scroll-view>

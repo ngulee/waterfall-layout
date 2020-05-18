@@ -1,0 +1,14 @@
+<view class="waterfall custom-class">
+  <view class="waterfall-inner" style="height:{{waterfallHeight}}px;">
+    <slot ></slot>
+  </view>
+  <view wx:if="{{loading}}" class="loaidng">
+    <view class="loaidng-icon"></view>
+    <text>{{loadingText}}</text>
+  </view>
+  <view wx:if="{{isAllLoaded}}" class="all-loaded">
+    <view class="all-loaded-line"></view>
+    <text class="all-loaded-text">{{allLoadedText}}</text>
+  </view>
+</view>
+

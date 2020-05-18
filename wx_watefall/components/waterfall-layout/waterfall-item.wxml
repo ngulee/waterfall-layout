@@ -1,0 +1,6 @@
+<view
+  class="waterfall-item custom-class"
+  style="{{position}}:0;top:{{(top >= 0 ? top + 'px' : itemCount * 100 + 'vh')}};"
+>
+  <slot ></slot>
+</view>

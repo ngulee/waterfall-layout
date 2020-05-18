@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "瀑布流组件",
+  "usingComponents": {
+    "waterfall": "../../components/waterfall-layout/waterfall",
+    "waterfall-item": "../../components/waterfall-layout/waterfall-item"
+  }
+}

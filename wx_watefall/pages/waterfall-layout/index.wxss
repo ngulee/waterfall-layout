@@ -1,0 +1,30 @@
+.waterfall-page-wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.product-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10rpx;
+  color: #fff;
+}
+
+
+.waterfall-box {
+  padding: 0 3vw !important;
+}
+.product-item-box {
+  width: 340rpx !important;
+}
+
+.example {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20rpx;
+}
