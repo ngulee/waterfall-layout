@@ -34,7 +34,7 @@ Page({
           logCode: `wx#bpm${index}.${index}${index+1}`
         },
         height: 400 + Math.random() * 200,
-        background: `rgb(${randomNumer(0, 100)},${randomNumer(0, 100)}, ${randomNumer(0, 100)})`
+        background: `rgb(${randomNumer(0, 255)},${randomNumer(0, 255)}, ${randomNumer(0, 255)})`
       }
       mockList.push(item)
     }
