@@ -11,12 +11,11 @@
     custom-class="waterfall-box"
     loading="{{updateLoading}}"
     isAllLoaded="{{isAllLoaded}}"
-    bind:scrolltolower="handleScrollLower"
   >
     <waterfall-item 
       custom-class="product-item-box"
       wx:for="{{products}}" 
-      wx:key="index" width="{{350}}"
+      wx:key="index"
     >
       <view 
         class="product-item" 
