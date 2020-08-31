@@ -2,13 +2,16 @@
   <view class="waterfall-inner" style="height:{{waterfallHeight}}px;">
     <slot ></slot>
   </view>
-  <view wx:if="{{loading}}" class="loaidng">
-    <view class="loaidng-icon"></view>
+  <view wx:if="{{loading}}" class="loading">
+    <view class="loading-icon"></view>
     <text>{{loadingText}}</text>
   </view>
-  <view wx:if="{{isAllLoaded}}" class="all-loaded">
+  <view wx:if="{{isShowAllLoadedTxt}}" class="all-loaded">
     <view class="all-loaded-line"></view>
     <text class="all-loaded-text">{{allLoadedText}}</text>
   </view>
+
+  <view class="empty" wx:if="{{isAllLoaded && isEmpty}}">{{emptyText}}</view>
+  <view class="placeholder" ></view>
 </view>
 

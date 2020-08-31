@@ -12,6 +12,10 @@ Component({
     }
   },
 
+  properties: {
+
+  },
+
   data: {
     itemCount: 10,    // 瀑布流重绘之前，在viewport之外渲染，防止低性能手机出现页面抖动的问题
     name: 'li',
@@ -20,6 +24,9 @@ Component({
   },
 
   parent: null,
+  observers: {
+
+  },
 
   lifetimes: {
     ready() {
@@ -43,7 +50,7 @@ Component({
   methods: {
     async setItemGap(node) {
       const { itemGap, waterfallWidth } = this.parent;
-      if(itemGap < 0) {
+      if(itemGap < 0 && node) {
         const { width } = node;
         this.parent.itemGap = waterfallWidth - width * 2;
       }
